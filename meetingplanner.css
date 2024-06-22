@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+    text-align: center;
+    
+}
+.formainheading{
+    color: azure;
+}
+.h1{
+    text-align: center;
+}
+.forsubheading{
+    color: azure;
+}
+.h2{
+    text-align: center;
+}
+.Start-meeting{
+    color: aliceblue;
+    height: 150px;
+}
+#btn1{
+    display: inline-block;
+    text-align: center;
+    background-color: blue;
+    color: aliceblue;
+    height: 37px;
+    width: 213px;
+    border-radius: 8px;
+    margin-top: 80px;
+    font-size: larger;
+}
+.Time{
+    margin-bottom: 40px;
+}
+label{
+    color: aliceblue;
+    font-size: larger;
+}
+#tmt{
+    color: aliceblue;
+    background-color: grey;
+    border-radius: 6px;
+    border: 8px white;
+    margin-right: 600px;
+    width: 90px;
+    height: 20px;
+}
+
+#ct{
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    margin-left: 30px;
+}
+.Table{
+    display: flex;
+    margin: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+#Timeleft{
+    color: black;
+}
+#Done{
+    color: black;
+}
+#Task{
+    color: black;
+}
+#Duration{
+    color: black;
+}
+#delete{
+    color: black;
+}
+.add{
+    margin-top: 50px;
+}
+#btnn{
+    background-color: black;
+    color: aliceblue;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+}
