@@ -1,25 +1,31 @@
-body{
+body {
     background-color: black;
     text-align: center;
-    
+
 }
-.formainheading{
+
+.formainheading {
     color: azure;
 }
-.h1{
+
+.h1 {
     text-align: center;
 }
-.forsubheading{
+
+.forsubheading {
     color: azure;
 }
-.h2{
+
+.h2 {
     text-align: center;
 }
-.Start-meeting{
+
+.Start-meeting {
     color: aliceblue;
     height: 150px;
 }
-#btn1{
+
+#btn1 {
     display: inline-block;
     text-align: center;
     background-color: blue;
@@ -30,14 +36,17 @@ body{
     margin-top: 80px;
     font-size: larger;
 }
-.Time{
+
+.Time {
     margin-bottom: 40px;
 }
-label{
+
+label {
     color: aliceblue;
     font-size: larger;
 }
-#tmt{
+
+#tmt {
     color: aliceblue;
     background-color: grey;
     border-radius: 6px;
@@ -47,13 +56,14 @@ label{
     height: 20px;
 }
 
-#ct{
+#ct {
     color: white;
     border-radius: 8px;
     width: 100px;
     margin-left: 30px;
 }
-.Table{
+
+.Table {
     display: flex;
     margin: 15px;
     flex-direction: row;
@@ -65,25 +75,32 @@ label{
     padding: 15px;
     border-radius: 6px;
 }
-#Timeleft{
+
+#Timeleft {
     color: black;
 }
-#Done{
+
+#Done {
     color: black;
 }
-#Task{
+
+#Task {
     color: black;
 }
-#Duration{
+
+#Duration {
     color: black;
 }
-#delete{
+
+#delete {
     color: black;
 }
-.add{
+
+.add {
     margin-top: 50px;
 }
-#btnn{
+
+#btnn {
     background-color: black;
     color: aliceblue;
     width: 60px;

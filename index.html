@@ -3,7 +3,7 @@
 
 <head>
     <title>Meeting Planner</title>
-    <link rel="stylesheet" href="meetingplanner.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -18,19 +18,14 @@
     </div>
     <div class="Time">
         <span><label for="tmt">Total Meeting Time:</label> <input type="number" id="tmt"> <label for="ct">Current
-        Time:</label><span onclick="CurrentTime()" id="ct"></span></span>
+                Time:</label><span id="ct"></span></span>
     </div>
     <div id="contentRow">
-        <div class="Table">
-            <span style="color:white">4:00</span>
-            <button id="Done" type="button" onclick="finishTopic()">Done</button>
-            <input type="text" id="Task" placeholder="Enter Task"></input>
-            <input type="number" id="Duration" placeholder="Enter Duration"></input>
-            <button id="delete" onclick="deleteTopic()">DEL</button>
-        </div>
+       
     </div>
 
     <div class="add" onclick="addTopic()"><button type="button" id="btnn">+</button></div>
 </body>
-<script src="meetingplanner.js"></script>
+<script src="index.js"></script>
+
 </html>
