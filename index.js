@@ -47,6 +47,7 @@ function generateElements(topic,index) {
     var finishTopic = document.createElement("button")
     wrapper.appendChild(finishTopic)
     finishTopic.textContent = "Done";
+    finishTopic.classList.add('Done')
 
     // create topic title
     var topicTitle = document.createElement("input")
@@ -59,8 +60,9 @@ function generateElements(topic,index) {
     // create delete button
     var deleteButton = document.createElement("button");
     wrapper.appendChild(deleteButton);
-    deleteButton.textContent = "del";
+    deleteButton.textContent = "DEL";
     deleteButton.onclick = function() { deleteTopic(index); };
+    deleteButton.classList.add('delete')
     return wrapper
 }
 
