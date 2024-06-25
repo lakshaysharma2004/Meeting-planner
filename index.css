@@ -72,7 +72,7 @@ label {
     border: solid;
     border-width: 2px;
     border-color: white;
-    padding: 15px;
+    padding: 10px;
     border-radius: 6px;
 }
 
@@ -83,7 +83,7 @@ label {
 .Done {
     color: white;
     background-color: green;
-    height: 60px;
+    height: 30px;
     width: 70px;;
     border-radius: 6px;
 }
