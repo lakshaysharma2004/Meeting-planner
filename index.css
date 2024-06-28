@@ -76,7 +76,7 @@ label {
     border-radius: 6px;
 }
 
-#Timeleft {
+.Timeleft {
     color: black;
 }
 
@@ -88,11 +88,11 @@ label {
     border-radius: 6px;
 }
 
-#Task {
+.Topic {
     color: black;
 }
 
-#Duration {
+.Duration {
     color: black;
 }
 
