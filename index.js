@@ -7,7 +7,7 @@ var defaultValues = {
 };
 
 function populatemeetingitems(){
-    clearTopic();
+    clearTopic()
     meetingTopics.forEach((topic, index) => {
         document.getElementById("contentRow").appendChild(generateElements(topic, index));
     });
@@ -43,6 +43,7 @@ function generateElements(topic, index) {
     // create timer
     var topicTimer = document.createElement("span");
     wrapper.appendChild(topicTimer);
+    topicTimer.classList.add('Timeleft');
 
     // create done button
     var finishTopicButton = document.createElement("button");
@@ -53,10 +54,12 @@ function generateElements(topic, index) {
     // create topic title
     var topicTitle = document.createElement("input");
     wrapper.appendChild(topicTitle);
+    topicTitle.classList.add('Topic');
 
     // create topic duration
     var topicDuration = document.createElement("input");
     wrapper.appendChild(topicDuration);
+    topicDuration.classList.add('Duration');
 
     // create delete button
     var deleteButton = document.createElement("button");
