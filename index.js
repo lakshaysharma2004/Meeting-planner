@@ -1,13 +1,14 @@
 var meetingTopics = [];
-
 var defaultValues = {
     time: 4,
     title: "Default",
     status: "Incomplete"
 };
+var counter = 0; // Counter variable to keep track of elapsed time
+var counterInterval; // Variable to store the interval ID
 
-function populatemeetingitems(){
-    clearTopic()
+function populatemeetingitems() {
+    clearTopic();
     meetingTopics.forEach((topic, index) => {
         document.getElementById("contentRow").appendChild(generateElements(topic, index));
     });
@@ -18,7 +19,7 @@ function addTopic() {
     populatemeetingitems();
 }
 
-function clearTopic(){
+function clearTopic() {
     document.getElementById("contentRow").innerHTML = '';
 }
 
@@ -33,6 +34,9 @@ function finishTopic() {
 
 function startMeeting() {
     console.log("Meeting Started");
+    counter = 0; // Reset the counter
+    clearInterval(counterInterval); // Clear any existing interval
+    counterInterval = setInterval(updateCounterClock, 1000); // Start the counter clock
 }
 
 function generateElements(topic, index) {
@@ -72,3 +76,26 @@ function generateElements(topic, index) {
 
     return wrapper;
 }
+
+// Function to update the real-time clock
+function updateClock() {
+    var now = new Date();
+    var hours = now.getHours().toString().padStart(2, '0');
+    var minutes = now.getMinutes().toString().padStart(2, '0');
+    var seconds = now.getSeconds().toString().padStart(2, '0');
+    var currentTime = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('ct').textContent = currentTime;
+}
+
+// Function to update the counter clock
+function updateCounterClock() {
+    counter++; // Increment the counter by 1 second
+    var hours = Math.floor(counter / 3600).toString().padStart(2, '0');
+    var minutes = Math.floor((counter % 3600) / 60).toString().padStart(2, '0');
+    var seconds = (counter % 60).toString().padStart(2, '0');
+    var counterTime = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('tmt').value = counterTime;
+}
+
+// Start the real-time clock update interval
+setInterval(updateClock, 1000);
